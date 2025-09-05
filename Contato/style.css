@@ -1,5 +1,96 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* importante para layouts responsivos */
+}
+
+body {
+    background-color: #023047;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.contact-card {
+    background-color: #fff;
+    color: #333;
+    max-width: 400px;
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card h2 {
+    color: #023047;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.contact-card form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-card label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-card input,
+.contact-card textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+    width: 100%;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+    outline: none;
+    border-color: #023047;
+    box-shadow: 0 0 5px #023047;
+}
+
+.contact-card button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background-color: #023047;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card button:hover {
+    background-color: #219EBC;
+}
+
+/* Responsividade */
+
+@media (max-width: 500px) {
+    .contact-card {
+        padding: 1rem;
+        width: 95%;
+    }
+    
+    .contact-card h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-card button {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
 }

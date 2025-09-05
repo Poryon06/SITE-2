@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Betoneiras</title>
+    <title>Contato</title>
 </head>
 <body>
-    
+    <section class="contact-card">
+        <h2>Fale Conosco</h2>
+        <form id="contactForm">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required />
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+      
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+      
+          <button type="button" onclick="enviar()">Enviar</button>
+        </form>
+        <button onclick="window.location.href = '/Home/index.html'" class="">Home</button>
+      </section>
+      
 </body>
 </html>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
